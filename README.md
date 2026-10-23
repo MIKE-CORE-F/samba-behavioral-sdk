@@ -1,20 +1,12 @@
 # S.A.N.B.A. Behavioral SDK (v1.0)
 
-Official public release of the **S.A.N.B.A. Behavioral SDK v1.0**. This modular, high-performance toolkit is designed to bridge external applications, environments, and systems with advanced artificial intelligence behavioral architectures and cognitive frameworks.
+Welkom bij de publieke Open Source release van de S.A.N.B.A. Behavioral SDK. Deze toolkit stelt ontwikkelaars in staat om externe applicaties en systemen te koppelen aan de gedragsarchitectuur en modulaire componenten.
 
----
+## Inhoud van de SDK
+- **`adapters/`**: Bevat de noodzakelijke SDK-adapters voor communicatie.
+- **`core_engine/`**: De basislogica van de gedragsengine (`behavioral_engine_sdk.py`).
+- **`cpp_src/`**: C++ broncode, headers en adapters voor snelle native integratie.
+- **`docs/`**: Documentatie en handleidingen.
 
-## 🚀 Overview
-The S.A.N.B.A. Behavioral SDK empowers developers to integrate sophisticated behavioral logic, decision-making pipelines, and structural event handlers into their applications without exposing core proprietary operating system kernels or confidential internal libraries.
-
-## 📂 Repository Structure
-* **`adapters/`**: SDK communication bridges and wrapper interfaces for seamless integration.
-* **`core_engine/`**: Core behavioral logic and runtime execution scripts (`behavioral_engine_sdk.py`).
-* **`cpp_src/`**: Native C++ source code, header files (`.h`), and high-performance adapters (`.cpp`) for robust system performance.
-* **`docs/`**: Technical documentation, architecture overviews, and developer guides.
-
-## ⚙️ Quick Start & Integration
-To initialize and test the behavioral engine locally:
-
-```bash
-python test_sdk_run.py
+## Licentie
+Dit project is gelicentieerd onder de voorwaarden zoals beschreven in het `LICENSE_AGREEMENT.txt` bestand.
