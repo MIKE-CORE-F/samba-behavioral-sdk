@@ -11,6 +11,21 @@ sys.path.append(os.path.join(BASE_DIR, 'licensing'))
 from behavioral_engine_sdk import BehavioralEngineSDK
 from license_guard import CommercialLicenseGuard
 
+import os
+import json
+
+# Automatische controle en aanmaak van licensing map en sleutel voor testfase
+os.makedirs('licensing', exist_ok=True)
+key_file = 'licensing/license_gemeente_antwerpen.key'
+if not os.path.exists(key_file):
+    key_data = {
+        "payload": {"client": "Gemeente Antwerpen", "vpu_hw_id": "VPU-MESH-X99", "tier": "ENTERPRISE", "expires_at": 1824045611},
+        "signature": "3dc20355599edb1ef34276435ad72797a61eee61518882428a008876fb5b8335"
+    }
+    with open(key_file, 'w', encoding='utf-8') as kf:
+        json.dump(key_data, kf, indent=4)
+
+
 def run_sdk_test():
     print("==================================================")
     print(" S.A.N.B.A. BEHAVIORAL SDK v1.0 - LIVE TEST RUN   ")
